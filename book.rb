@@ -1,4 +1,7 @@
+require "./lend.rb"
+
 class Book
+    include Lendable
     attr_reader :title, :author, :count
     attr_writer :finished, :count
     attr_accessor :title, :author, :finished, :count
